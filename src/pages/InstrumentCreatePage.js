@@ -1,11 +1,15 @@
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export function InstrumentCreatePage() {
+
+  const  [t, i18n] = useTranslation("global");
+
   const navigate = useNavigate();
 
   return (
     <div className="p-5 content bg-whitesmoke text-center">
-      <h2>Új hangszer</h2>
+      <h2>{t("newInstrumentPage.title")}</h2>
       <form
         onSubmit={(e) => {
           e.persist();
@@ -27,31 +31,31 @@ export function InstrumentCreatePage() {
         }}
       >
         <div className="form-group row pb-3">
-          <label className="col-sm-3 col-form-label">Név:</label>
+          <label className="col-sm-3 col-form-label">{t("newInstrumentPage.name")}:</label>
           <div className="col-sm-9">
             <input type="text" name="name" className="form-control" />
           </div>
         </div>
         <div className="form-group row pb-3">
-          <label className="col-sm-3 col-form-label">Ár:</label>
+          <label className="col-sm-3 col-form-label">{t("newInstrumentPage.prise")}:</label>
           <div className="col-sm-9">
             <input type="number" name="price" className="form-control" />
           </div>
         </div>
         <div className="form-group row pb-3">
-          <label className="col-sm-3 col-form-label">Darabszám:</label>
+          <label className="col-sm-3 col-form-label">{t("newInstrumentPage.piece")}:</label>
           <div className="col-sm-9">
             <input type="number" name="quantity" className="form-control" />
           </div>
         </div>
         <div className="form-group row pb-3">
-          <label className="col-sm-3 col-form-label">Kép URL:</label>
+          <label className="col-sm-3 col-form-label">{t("newInstrumentPage.imageUrl")}:</label>
           <div className="col-sm-9">
             <input type="text" name="imageURL" className="form-control" />
           </div>
         </div>
         <button type="submit" className="btn btn-success">
-          Küldés
+        {t("newInstrumentPage.button")}
         </button>
       </form>
     </div>

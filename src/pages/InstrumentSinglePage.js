@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 
-export default function InstrumentSinglePage(props) {
+export function InstrumentSinglePage(props) {
+
+  const  [t, i18n] = useTranslation("global");
   //const id = props.match.params.hangszerId;
   const param = useParams();
   const id = param.hangszerId;
@@ -37,7 +40,7 @@ export default function InstrumentSinglePage(props) {
             <h4>{instrument.brand}</h4>
             <h5 className="card-title">{instrument.name}</h5>
             <div className="lead">{instrument.price} ft</div>
-            <p>Készleten: {instrument.quantity} db</p>
+            <p>{t("singleInstrumentPage.stock")}: {instrument.quantity} {t("singleInstrumentPage.piece")}</p>
             <img
               className="img-fluid rounded"
               style={{ maxHeight: "500px" }}

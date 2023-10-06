@@ -1,0 +1,24 @@
+{
+    "nav": {
+        "instrument": "Hangszerek",
+        "newInstrument": "Új hangszer"
+    },
+
+    "instrumentListPage": {
+        "title": "Hangszerek",
+        "stock": "Készleten",
+        "piece": "db"
+    },
+    "newInstrumentPage": {
+        "title": "Új hangszer",
+        "name": "Név",
+        "prise": "Ár",
+        "piece": "Darabszám",
+        "imageUrl": "Kép URL",
+        "button": "Küldés"
+    },
+    "singleInstrumentPage": {
+        "stock": "Készleten",
+        "piece": "db"
+    }
+}

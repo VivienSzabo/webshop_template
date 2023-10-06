@@ -1,0 +1,24 @@
+{
+    "nav": {
+        "instrument": "Musical instruments",
+        "newInstrument": "New instrument"
+    },
+
+    "instrumentListPage": {
+        "title": "Musical instruments",
+        "stock": "In stock",
+        "piece": "piece"
+    },
+    "newInstrumentPage": {
+        "title": "New instrument",
+        "name": "Name",
+        "prise": "Price",
+        "piece": "Piece",
+        "imageUrl": "Image URL",
+        "button": "Send"
+    },
+    "singleInstrumentPage": {
+        "stock": "In stock",
+        "piece": "piece"
+    }
+}

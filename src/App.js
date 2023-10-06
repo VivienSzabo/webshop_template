@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { InstrumentListPage } from "./pages/InstrumentListPage";
-import { InstrumentSinglePage }  from "./pages/InstrumentSinglePage";
+import { InstrumentSinglePage } from "./pages/InstrumentSinglePage";
 import { InstrumentCreatePage } from "./pages/InstrumentCreatePage";
 import Nav from "./components/Nav";
 
